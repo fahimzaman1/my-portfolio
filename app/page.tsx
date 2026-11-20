@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
@@ -6,7 +8,7 @@ export default function Home() {
         <nav className="flex gap-6 text-sm">
           <a href="#services">Services</a>
           <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
+          <Link href="/contact">Contact</Link>
         </nav>
       </header>
 
@@ -17,12 +19,12 @@ export default function Home() {
         <p className="mt-6 text-lg text-gray-600">
           I build fast websites and grow them with SEO and ads.
         </p>
-        <a
-          href="#contact"
+        <Link
+          href="/contact"
           className="inline-block mt-8 bg-black text-white px-6 py-3 rounded-full"
         >
           Hire Me
-        </a>
+        </Link>
       </section>
 
       <section id="services" className="px-8 py-16 max-w-4xl mx-auto">
